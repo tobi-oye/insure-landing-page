@@ -1,0 +1,110 @@
+.box {
+  /* border: 1px solid black; */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap");
+body {
+  margin: 0px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.header-image {
+  /* margin: -5px; */
+}
+.first-section {
+  position: relative;
+
+  color: white;
+}
+.bg-pattern-left-mobile {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+}
+.first-section-header,
+.second-section-header {
+  font-family: "DM Serif Display", serif;
+  font-size: 46px;
+  font-weight: bold;
+}
+.first-section-body,
+.second-section-header,
+.second-section-body,
+.lighting-icon,
+.dollar-icon,
+.people-first-icon {
+  margin: 25px 0px;
+}
+.second-subsection,
+.first-section,
+button {
+  background-color: hsl(256, 26%, 20%);
+}
+button {
+  border: 1px solid white;
+  padding: 10px 40px;
+  color: white;
+}
+.second-section-line {
+  width: 50%;
+  margin: 40px auto;
+}
+.second-section,
+.first-section {
+  padding: 90px 30px;
+  text-align: center;
+}
+.second-section-header {
+  color: black;
+}
+.second-section-subheader {
+  font-family: "DM Serif Display", serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+li,
+.second-section-body,
+.first-section-body {
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+
+  color: hsl(216, 30%, 68%);
+}
+.second-subsection {
+  color: white;
+  padding: 100px 0px;
+  margin: 80px 0px;
+}
+.second-subsection > div.first-section-header {
+  margin-bottom: 50px;
+}
+.third-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  /* flex-basis: 100; */
+  margin: 20px 0px;
+}
+.all-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 25px 0px;
+}
+hr {
+  color: black;
+}
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+li {
+  color: black;
+}
