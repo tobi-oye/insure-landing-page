@@ -72,7 +72,6 @@ li,
   font-family: "Karla", sans-serif;
   font-weight: bold;
   line-height: 1.5;
-
   color: hsl(216, 30%, 68%);
 }
 .second-subsection {
@@ -107,4 +106,8 @@ ul {
 }
 li {
   color: black;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 10px 0px;
+  letter-spacing: 2px;
 }
