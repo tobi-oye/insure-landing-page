@@ -133,7 +133,9 @@ li {
   margin: 10px 0px;
   letter-spacing: 2px;
 }
-
+footer {
+  text-align: center;
+}
 nav > ul > li {
   display: none;
 }
@@ -152,6 +154,8 @@ nav > ul > li {
       "first-section"
       "second-section";
   }
+  .bg-pattern-footer-mobile,
+  .header-image,
   .hamburger,
   .bg-pattern-left-mobile {
     display: none;
@@ -244,5 +248,23 @@ nav > ul > li {
   }
   .bg-pattern-how-we-work-mobile {
     display: none;
+  }
+  footer {
+    padding: 0px 150px;
+  }
+  .third-section {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .all-icons {
+    width: 20%;
+  }
+  .all-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 179px;
   }
 }
