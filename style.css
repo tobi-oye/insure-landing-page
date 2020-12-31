@@ -112,6 +112,7 @@ li,
 .logo {
   /* flex-basis: 100; */
   margin: 20px 0px;
+  margin-left: 10px;
 }
 .all-icons {
   display: flex;
@@ -143,9 +144,17 @@ nav > ul > li {
   display: flex;
   justify-content: space-between;
 }
+.bg-pattern-footer-desktop,
+.bg-pattern-how-we-work-desktop,
+.bg-pattern-intro-right-desktop,
+.image-intro-desktop,
+.bg-pattern-intro-left-desktop {
+  display: none;
+}
 
 @media screen and (min-width: 700px) {
   .container {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -154,11 +163,18 @@ nav > ul > li {
       "first-section"
       "second-section";
   }
+  .bg-pattern-intro-right-mobile,
   .bg-pattern-footer-mobile,
   .header-image,
   .hamburger,
   .bg-pattern-left-mobile {
     display: none;
+  }
+  .bg-pattern-intro-left-desktop {
+    position: absolute;
+    top: 600px;
+    left: 0px;
+    z-index: 1;
   }
   header {
     grid-area: header;
@@ -166,10 +182,13 @@ nav > ul > li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: white;
+    z-index: 1;
   }
 
   .first-section {
     grid-area: first-section;
+    margin-bottom: 150px;
   }
   .second-section {
     grid-area: second-section;
@@ -180,7 +199,8 @@ nav > ul > li {
   }
   nav > ul > li {
     display: inline;
-    margin: auto 20px;
+    margin: auto 9px;
+    font-weight: bold;
   }
   li > button {
     background: none;
@@ -192,6 +212,7 @@ nav > ul > li {
     display: flex;
     flex-direction: row;
     padding: 150px 150px;
+    position: relative;
   }
   .subsection-first-section {
     width: 51%;
@@ -201,7 +222,19 @@ nav > ul > li {
     font-size: 80px;
     margin-top: 50px;
   }
-
+  .image-intro-desktop,
+  .bg-pattern-intro-right-desktop {
+    position: absolute;
+  }
+  .bg-pattern-intro-right-desktop {
+    top: -84px;
+    right: 0px;
+    /* z-index: -1; */
+  }
+  .image-intro-desktop {
+    top: 149px;
+    right: 110px;
+  }
   .subsection-first-section > hr {
     width: 45%;
     margin: 0px;
@@ -230,10 +263,11 @@ nav > ul > li {
     font-size: 18px;
   }
   .second-subsection {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px;
+    padding: 57px 100px;
     width: -moz-available; /* WebKit-based browsers will ignore this. */
     width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
     width: fill-available;
@@ -251,6 +285,8 @@ nav > ul > li {
   }
   footer {
     padding: 0px 150px;
+    text-align: left;
+    position: relative;
   }
   .third-section {
     margin-top: 10px;
@@ -266,5 +302,15 @@ nav > ul > li {
     flex-direction: row;
     justify-content: space-between;
     padding-right: 179px;
+  }
+  .bg-pattern-how-we-work-desktop {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .bg-pattern-footer-desktop {
+    position: absolute;
+    left: 0px;
+    top: 0px;
   }
 }
