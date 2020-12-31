@@ -211,4 +211,18 @@ nav > ul > li {
   .purple-line > hr {
     width: 100%;
   }
+  .first-subsection {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    justify-content: space-around;
+    font-size: 15px;
+    width: 100%;
+  }
+  .first-subsection > div {
+    flex-basis: 30%;
+  }
+  .second-section-subheader {
+    font-size: 18px;
+  }
 }
