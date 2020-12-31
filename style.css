@@ -225,4 +225,24 @@ nav > ul > li {
   .second-section-subheader {
     font-size: 18px;
   }
+  .second-subsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    width: -moz-available; /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
+  }
+  .second-subsection > div.first-section-header {
+    width: 60%;
+    font-size: 60px;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  .bg-pattern-how-we-work-mobile {
+    display: none;
+  }
 }
