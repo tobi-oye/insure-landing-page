@@ -137,25 +137,7 @@ li {
 footer {
   text-align: center;
 }
-nav {
-  background-color: hsl(256, 26%, 20%);
-  height: 100vh;
-  padding: 50px;
-  display: none;
-  /* overflow: hidden; */
-}
-nav > ul > li > button {
-  text-transform: uppercase;
-  font-size: 20px;
-  padding: 20px 70px;
-}
-nav > ul > li {
-  color: white;
-  text-align: center;
-  margin: 40px 0px;
-  font-size: 20px;
-  position: relative;
-}
+
 .bg-pattern-mobile-nav {
   position: absolute;
   top: 300px;
@@ -165,12 +147,34 @@ nav > ul > li {
   display: flex;
   justify-content: space-between;
 }
-.bg-pattern-footer-desktop,
-.bg-pattern-how-we-work-desktop,
-.bg-pattern-intro-right-desktop,
-.image-intro-desktop,
-.bg-pattern-intro-left-desktop {
-  display: none;
+
+@media screen and (max-width: 600px) {
+  .bg-pattern-footer-desktop,
+  .bg-pattern-how-we-work-desktop,
+  .bg-pattern-intro-right-desktop,
+  .image-intro-desktop,
+  .bg-pattern-intro-left-desktop {
+    display: none;
+  }
+  nav {
+    background-color: hsl(256, 26%, 20%);
+    height: 100vh;
+    padding: 50px;
+    display: none;
+    /* overflow: hidden; */
+  }
+  nav > ul > li > button {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 20px 70px;
+  }
+  nav > ul > li {
+    color: white;
+    text-align: center;
+    margin: 40px 0px;
+    font-size: 20px;
+    position: relative;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -184,6 +188,8 @@ nav > ul > li {
       "first-section"
       "second-section";
   }
+
+  .bg-pattern-mobile-nav,
   .bg-pattern-intro-right-mobile,
   .bg-pattern-footer-mobile,
   .header-image,
@@ -197,8 +203,14 @@ nav > ul > li {
     left: 0px;
     z-index: 1;
   }
-  header {
+  .top-header {
     grid-area: header;
+    background-color: white;
+    z-index: 1;
+    justify-content: space-between;
+    padding: 10px 50px;
+  }
+  header {
     padding: 0px 100px;
     display: flex;
     flex-direction: row;
@@ -206,7 +218,9 @@ nav > ul > li {
     background-color: white;
     z-index: 1;
   }
-
+  .top-header {
+    display: flex;
+  }
   .first-section {
     grid-area: first-section;
     margin-bottom: 150px;
@@ -217,6 +231,8 @@ nav > ul > li {
     flex-direction: column;
     align-items: flex-start;
     padding: 100px 150px;
+  }
+  nav {
   }
   nav > ul > li {
     display: inline;
