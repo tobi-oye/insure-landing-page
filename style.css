@@ -140,7 +140,7 @@ footer {
 
 .bg-pattern-mobile-nav {
   position: absolute;
-  top: 300px;
+  top: 224px;
   left: 0px;
 }
 .first-header-section {
@@ -158,7 +158,7 @@ footer {
   }
   nav {
     background-color: hsl(256, 26%, 20%);
-    height: 100vh;
+    height: 70vh;
     padding: 50px;
     display: none;
     /* overflow: hidden; */
@@ -174,6 +174,9 @@ footer {
     margin: 40px 0px;
     font-size: 20px;
     position: relative;
+  }
+  .header-image > img {
+    width: 100%;
   }
 }
 
@@ -248,11 +251,11 @@ footer {
   .first-section {
     display: flex;
     flex-direction: row;
-    padding: 150px 150px;
+    padding: 150px 80px;
     position: relative;
   }
   .subsection-first-section {
-    width: 51%;
+    width: 50%;
     text-align: justify;
   }
   .first-section-header {
