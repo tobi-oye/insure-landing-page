@@ -140,7 +140,7 @@ footer {
 
 .bg-pattern-mobile-nav {
   position: absolute;
-  top: 224px;
+  top: 299px;
   left: 0px;
 }
 .first-header-section {
@@ -169,9 +169,10 @@ nav,
 
   nav.resp {
     background-color: hsl(256, 26%, 20%);
-    height: 70vh;
+    height: 75vh;
     padding: 50px;
     display: block;
+    overflow: hidden;
   }
   nav > ul > li > button {
     text-transform: uppercase;
@@ -202,6 +203,11 @@ nav,
       "first-section"
       "second-section";
   }
+  .second-subsection > div > button {
+    position: relative;
+    z-index: 2;
+  }
+
   nav > ul > li > button:hover {
     color: white;
     background-color: hsl(256, 26%, 20%);
@@ -327,9 +333,11 @@ nav,
     cursor: pointer;
   }
   .subsection-first-section > div > button {
-    z-index: 0;
+    z-index: 2;
+    position: relative;
   }
-  .subsection-first-section > div > button:hover {
+  .subsection-first-section > div > button:hover,
+  .second-subsection > div > button:hover {
     background-color: white;
     color: black;
     cursor: pointer;
