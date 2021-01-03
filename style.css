@@ -128,7 +128,7 @@ ul {
   padding: 0px;
 }
 li {
-  color: black;
+  color: hsl(273, 4%, 51%);
   text-transform: uppercase;
   font-size: 12px;
   margin: 10px 0px;
@@ -147,6 +147,10 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+nav,
+.hamburger {
+  display: none;
+}
 
 @media screen and (max-width: 600px) {
   .bg-pattern-footer-desktop,
@@ -156,18 +160,25 @@ footer {
   .bg-pattern-intro-left-desktop {
     display: none;
   }
+  .hamburger {
+    display: block;
+  }
   nav {
+    display: none;
+  }
+
+  nav.resp {
     background-color: hsl(256, 26%, 20%);
     height: 70vh;
     padding: 50px;
-    display: none;
-    /* overflow: hidden; */
+    display: block;
   }
   nav > ul > li > button {
     text-transform: uppercase;
     font-size: 20px;
     padding: 20px 70px;
   }
+
   nav > ul > li {
     color: white;
     text-align: center;
@@ -190,6 +201,15 @@ footer {
       "header"
       "first-section"
       "second-section";
+  }
+  nav > ul > li > button:hover {
+    color: white;
+    background-color: hsl(256, 26%, 20%);
+    cursor: pointer;
+  }
+  nav > ul > li:hover {
+    color: black;
+    cursor: pointer;
   }
 
   .bg-pattern-mobile-nav,
@@ -236,6 +256,7 @@ footer {
     padding: 100px 150px;
   }
   nav {
+    display: block;
   }
   nav > ul > li {
     display: inline;
@@ -274,6 +295,7 @@ footer {
   .image-intro-desktop {
     top: 149px;
     right: 110px;
+    /* width: auto; */
   }
   .subsection-first-section > hr {
     width: 45%;
@@ -298,6 +320,20 @@ footer {
   }
   .first-subsection > div {
     flex-basis: 30%;
+  }
+
+  path:hover {
+    fill: black;
+    cursor: pointer;
+  }
+  .subsection-first-section > div > button {
+    z-index: 0;
+  }
+  .subsection-first-section > div > button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    /* z-index: 1; */
   }
   .second-section-subheader {
     font-size: 18px;
@@ -352,5 +388,10 @@ footer {
     position: absolute;
     left: 0px;
     top: 0px;
+    z-index: -1;
+  }
+  .second-section-body > ul > li:hover {
+    text-decoration: underline;
+    cursor: pointer;
   }
 }

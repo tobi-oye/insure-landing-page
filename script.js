@@ -3,9 +3,9 @@ let mobileNav = document.querySelector("nav");
 
 hamburgerButton.addEventListener("click", () => {
   console.log("hello world");
-  if (mobileNav.style.display === "block" && screen.width <= 700) {
-    return (mobileNav.style.display = "none");
+  if (mobileNav.className === "") {
+    return (mobileNav.className = "resp");
   } else {
-    return (mobileNav.style.display = "block");
+    return (mobileNav.className = "");
   }
 });
